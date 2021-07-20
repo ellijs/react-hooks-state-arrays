@@ -5,14 +5,6 @@ function SpicyFoodList() {
   const [foods, setFoods] = useState(spicyFoods); 
   const [filterBy, setFilterBy] = useState("All"); 
 
-  // const lists = foods.map((food) =>
-  //   <li key={food.id} >
-  //     <h2 onClick ={()=>handleLiClick(food.id)}>{food.name}</h2>
-  //     <p>Cuisine: {food.cuisine}</p>
-  //     <p onClick = {()=> increaseHeat(food.id)}>heat: {food.heatLevel}</p>
-  //   </li>
-  // )
-
   function increaseHeat(id) {
     const newFoodArray = foods.map(food =>
       (food.id === id) ? { ...food, heatLevel: food.heatLevel + 1 } : food
