@@ -10,7 +10,8 @@ const newSpicyFoods = [
 ];
 
 function getNewSpicyFood() {
-  return newSpicyFoods.shift();
+  // return newSpicyFoods.shift();
+  return newSpicyFoods;
 }
 
 export { spicyFoods, getNewSpicyFood };
